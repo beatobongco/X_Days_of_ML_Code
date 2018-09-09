@@ -1,8 +1,8 @@
 # X Days of ML Code
 
-### Streak: 1 day
-
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
+
+### Streak: 1 day
 
 ## 9/9/2018
 Tags: Tensorflow image reading pipeline
