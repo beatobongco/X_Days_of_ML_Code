@@ -5,7 +5,7 @@
 ### Streak: 1 day
 
 ## 9/9/2018
-Tags: Tensorflow image reading pipeline
+Tags: tensorflow read image reading
 
 Colab: https://colab.research.google.com/drive/15yTXLUfoSfIhiGG3G1B4fZtQsqTg9xBU
 
