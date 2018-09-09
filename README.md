@@ -6,6 +6,7 @@
 
 ## 9/9/2018
 Tags: Tensorflow image reading pipeline
+
 Colab: https://colab.research.google.com/drive/15yTXLUfoSfIhiGG3G1B4fZtQsqTg9xBU
 
 Working on creating a pipeline that can train a binary image classifier called XorNotX (inspired by hotdog or not hotdog).
