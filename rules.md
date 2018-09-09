@@ -8,7 +8,7 @@
 ## Motivation
 
 Create an interactive library of your learning to
-* motivate you by showing your progress (as in the [Seinfeld technique](https://lifehacker.com/281626/jerry-seinfelds-productivity-secret)
+* motivate you by showing your progress (as in the [Seinfeld technique](https://lifehacker.com/281626/jerry-seinfelds-productivity-secret))
 * have working code to reference when you forget things
 * show to others to help them learn
 
