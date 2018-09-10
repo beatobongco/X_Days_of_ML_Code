@@ -26,7 +26,7 @@ Colab: https://colab.research.google.com/drive/1WCzAnzMIvo37G5hzoWA9S-JJNKi6Z2aO
 * doing tf in graphs is low level but have some good benefits, however eager execution might be preferred for initial learning. 
 * you start coding in tf by building a graph (use as a context manager) `with tf.Graph().as_default():` and then putting ops inside
 * Sessions represent a connection between the program and the runtime. You could point it to a runtime in the args `with tf.Session('grpc://example.org:2222'):`. By default, a new `tf.Session` will be bound to---and only able to run operations in---the current default graph. You can use sessions by nested it inside the graph context manager
-* `tf.Session.run` is how to run stuff in the graph. Pass one or more (as a list) operations or tensors in as arguments (they are called `fetches`)
+* `tf.Session.run` is how to run stuff in the graph. Pass one or more (as a list) operations or tensors in as arguments (they are called `fetches`) e.g. `a, b = sess.run([x, y])`
 * `fetches` determine what subgraph of the overall graph must be executed to produce the result
 * If you define multiple `fetches`, it wont execute graph one time for each fetch
 * `run` can take *feeds* `sess.run(y, {x: [1.0, 2.0, 3.0]})` which can feed values typically into `tf.placeholder`s
