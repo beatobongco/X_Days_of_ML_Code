@@ -2,7 +2,25 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Streak: 3 days
+### Streak: 4 days
+
+## 2018/9/12
+Tags: keras preprocessing image ImageDataGenerator RGB normalization
+
+Colab: https://colab.research.google.com/drive/1y14mcC3RFRY_kL2n9LAZ3tRJ6LhZiR0p
+
+Learned a lot about images today.
+
+* `matplotlib.pyplot.imshow` can take in a PIL image
+* `keras.preprocessing.image` as `i` for this example
+  * If you load a jpeg with `i.load_img` then do `i.img_to_array` then do `imshow` you'll get a weird image. This is because the values are floats and range from 0-255 and according to [`imshow`'s docs](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html), all values should be in the range of 0-1 for floats and 0-255 for integers otherwise they are clipped. 
+    * Casting via `np.array.astype(np.uint8)` works, `uint8` because integer array must be of datatype int8 not int32. 
+    * Better solution is to just divide the array by 255 to get floats between 0 and 1. This type of normalization is better for ML systems anyway, and it can be plotted for viz! Discussion of other normalization [here](http://forums.fast.ai/t/images-normalization/4058/2)
+  * If you load images via `i.ImageDataGenerator.flow`, just use the output of `i.img_to_array` directly. It is scaled automatically. Warning! If you manually scale it first, it will scale it again giving you bad values!
+  * Directory structure is important in keras. Split into train/test/validation beforehand.
+  
+**Next steps**
+* Still go through [this](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
 ## 2018/9/11
 Tags: keras preprocessing image ImageDataGenerator
@@ -35,7 +53,7 @@ Colab: https://colab.research.google.com/drive/1WCzAnzMIvo37G5hzoWA9S-JJNKi6Z2aO
 * While reading through Graphs and Sessions, the docs recommend to go a level higher with [`tf.estimator.Estimator`](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator). I should read a little about it.
 * Learn about tf through eager execution https://tf.wiki/
 * Could be useful to reread this if going the low-level path https://betterexplained.com/articles/matrix-multiplication/
-* Still go through this: https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+* Still go through [this](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
 ## 2018/9/9
 Tags: tensorflow read image reading
