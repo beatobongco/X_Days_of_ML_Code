@@ -2,7 +2,17 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Streak: 4 days
+### Streak: 5 days
+
+## 2018/9/13
+Tags: keras CNN entropic capacity
+
+Colab: https://colab.research.google.com/drive/1y14mcC3RFRY_kL2n9LAZ3tRJ6LhZiR0p
+
+* entropic capacity - how much information your model is allowed to store, having smaller capacity fights overfitting by focusin on the most significant features found in the data, opposed to a high capacity model that can just store many (irrelevant) features
+  * you can reduce entropic capacity by reducing layers and size of each layer, and also through regularization 
+* adding layers to a keras `Sequential` model is easy, just like adding to a list. Indeed, you can even initialize with a list `Sequential([layer1, layer2, ...])`
+* tensorflow uses the image data format of 'channels_last', e.g. for RGB image 150x150 you'd have shape (150, 150, 3)
 
 ## 2018/9/12
 Tags: keras preprocessing image ImageDataGenerator RGB normalization
