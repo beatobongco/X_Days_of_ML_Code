@@ -15,6 +15,10 @@ Colab: https://colab.research.google.com/drive/1y14mcC3RFRY_kL2n9LAZ3tRJ6LhZiR0p
 * adding layers to a keras `Sequential` model is easy, just like adding to a list. Indeed, you can even initialize with a list `Sequential([layer1, layer2, ...])`
 * tensorflow uses the image data format of 'channels_last', e.g. for RGB image 150x150 you'd have shape (150, 150, 3)
 
+**Next steps**
+* Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+* learn more high-level intution for *convolutional neural networks* and *max pooling* 
+
 ## 2018/9/12
 Tags: keras preprocessing image ImageDataGenerator RGB normalization
 
@@ -31,7 +35,7 @@ Learned a lot about images today.
   * Directory structure is important in keras. Split into train/test/validation beforehand.
   
 **Next steps**
-* Still go through [this](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+* Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
 ## 2018/9/11
 Tags: keras preprocessing image ImageDataGenerator
