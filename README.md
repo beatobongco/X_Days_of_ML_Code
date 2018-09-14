@@ -2,8 +2,23 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 5 days
-### Best streak: 5 days
+### Current streak: 6 days
+### Best streak: 6 days
+
+## 2018/9/14
+Tags: CNN convolution python
+
+**Convolutional layer** ([video](https://www.youtube.com/watch?v=YRhxdVk_sIs))
+* contain a number of `filters`, each filter detects a pattern        
+  * small, randomly-initialized matrix of size *kernel_size* (keras)
+  * this small matrix (kernel?) slides (convolves) over the image trying to detect a pattern
+  * during each convolution it will compute the dot product of the kernel with the section of the image and store its value in an output matrix. Remember a dot product returns a single value, so the output matrix will have smaller dimensions than the initial matrix
+  * The pattern detection can be seen at work in the ff image. Bright output represents what the filter strongly detects ![image](https://user-images.githubusercontent.com/3739702/45540860-171d1600-b840-11e8-9315-7f1ebeb158a9.png)
+
+**Next steps**
+* From the deeplizard videos, I can learn from source: fast.ai lectures
+* Check out this max pooling video https://www.youtube.com/watch?v=ZjM_XQa5s6s
+* check out `glob` and `pathlib` to split dataset
 
 ## 2018/9/13
 Tags: keras CNN entropic capacity
@@ -18,6 +33,7 @@ Colab: https://colab.research.google.com/drive/1y14mcC3RFRY_kL2n9LAZ3tRJ6LhZiR0p
 **Next steps**
 * Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 * learn more high-level intution for *convolutional neural networks* and *max pooling* 
+* Split cat and dog data into train/test folders with 1k images per class for train and 400 per class for test. Make a new folder in gdrive for this 
 
 ## 2018/9/12
 Tags: keras preprocessing image ImageDataGenerator RGB normalization
