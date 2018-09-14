@@ -10,10 +10,10 @@ Tags: CNN convolution python
 
 **Convolutional layer** ([video](https://www.youtube.com/watch?v=YRhxdVk_sIs))
 * contain a number of `filters`, each filter detects a pattern        
-  * small, randomly-initialized matrix of size *kernel_size* (keras)
-  * this small matrix (kernel?) slides (convolves) over the image trying to detect a pattern
-  * during each convolution it will compute the dot product of the kernel with the section of the image and store its value in an output matrix. Remember a dot product returns a single value, so the output matrix will have smaller dimensions than the initial matrix
-  * The pattern detection can be seen at work in the ff image. Bright output represents what the filter strongly detects ![image](https://user-images.githubusercontent.com/3739702/45540860-171d1600-b840-11e8-9315-7f1ebeb158a9.png)
+* small, randomly-initialized matrix of size *kernel_size* (keras)
+* this small matrix (kernel?) slides (convolves) over the image trying to detect a pattern
+* during each convolution it will compute the dot product of the kernel with the section of the image and store its value in an output matrix. Remember a dot product returns a single value, so the output matrix will have smaller dimensions than the initial matrix
+* The pattern detection can be seen at work in the ff image. Bright output represents what the filter strongly detects ![image](https://user-images.githubusercontent.com/3739702/45540860-171d1600-b840-11e8-9315-7f1ebeb158a9.png)
 
 **Next steps**
 * From the deeplizard videos, I can learn from source: fast.ai lectures
