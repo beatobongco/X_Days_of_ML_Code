@@ -2,8 +2,28 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 6 days
-### Best streak: 6 days
+### Current streak: 7 days
+### Best streak: 7 days
+
+## 2018/9/15
+Tags: max pooling 
+
+[Video](https://www.youtube.com/watch?v=ZjM_XQa5s6s) was very good. Sliding window of a certain size that gets max and puts into an output matrix, effectively shrinking the matrix
+
+Effect of `MaxPooling2D(pool_size=(2, 2), stride=2)`:
+
+```
+[4, 3, 8, 5
+ 9, 1, 3, 6 ==> [9, 8
+ 6, 3, 5, 3      6, 5]
+ 2, 5, 2, 5]
+```
+
+It has no trainable params!
+
+**Next steps**
+* check out `glob` and `pathlib` to split dataset
+* Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
 ## 2018/9/14
 Tags: CNN convolution python
