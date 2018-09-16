@@ -2,8 +2,24 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 7 days
-### Best streak: 7 days
+### Current streak: 8 days
+### Best streak: 8 days
+
+## 2018/9/16
+Tags: python3 pathlib dataset splitting iterator
+
+Gist: https://gist.github.com/beatobongco/e66dde2568bafb68d25b3712753a09e4
+
+* created a script to copy images from the [cats vs. dogs dataset](https://www.kaggle.com/c/dogs-vs-cats/data) into the number folder structure detailed in the keras tutorial
+* learned Python's `iter()` can be used on lists to make them iterators, which returns items until exhausted. This is quite useful when you want to utilize each item in the list only once, or to have a list that "remembers" where it is when you loop through it in different parts of the code
+* `pathlib.Path` is a super cool Python 3 standard library module where you can 
+  * compose paths like `Path.cwd() / 'dataset' / 'dog'`
+  * create dirs if they don't exist easily via `Path.mkdir(exist_ok=True)`
+  * use `glob` syntax to match files/folders like `Path.cwd().glob('cat*')` to get all matches of cat in the current directory!
+
+
+**Next steps**
+* Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
 ## 2018/9/15
 Tags: max pooling 
