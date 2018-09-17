@@ -2,8 +2,27 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 8 days
-### Best streak: 8 days
+### Current streak: 9 days
+### Best streak: 9 days
+
+## 2018/9/17
+Tags: rmsprop optimizer recurrent neural networks RNN
+
+Videos:
+* https://www.youtube.com/watch?v=_e-LFe_igno
+* https://www.youtube.com/watch?v=defQQqkXEfE
+
+![image](https://user-images.githubusercontent.com/3739702/45638182-02aa7900-badf-11e8-83a7-d2b48c241f6c.png)
+
+
+* reduces oscillations in gradient descent by dividing the gradient with the exponentially weighted average of its recent magnitude (if you look at the formula, you'll see why it's called ROOT MEAN SQUARE)
+* vs vanilla gradient descent, allows us to use larger learning rates (doesn't decay with default params)
+* debuted in Geoff Hinton's Neural Networks course on Coursera (would be good to take this)
+* according to [keras docs](https://keras.io/optimizers/#rmsprop), it's a good choice for recurrent neural networks
+* why did fchollet use rmsprop for the image classification tutorial? Let's try `adam`
+
+**Next steps**
+* Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
 ## 2018/9/16
 Tags: python3 pathlib dataset splitting iterator
