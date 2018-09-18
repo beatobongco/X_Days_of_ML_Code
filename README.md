@@ -2,8 +2,24 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 9 days
-### Best streak: 9 days
+### Current streak: 10 days
+### Best streak: 10 days
+
+## 2018/9/18
+Tags: podcast keras fit generator
+
+Colab: https://colab.research.google.com/drive/1nU_VOPGPu1VBUu1G2rkZZNXQkWY9p8Zs
+
+* `fit_generator` trains the model on data generated batch-by-batch by a Python generator or `Sequence`. `ImageDataGenerators` are perfect food for this function
+ * basically use this over `fit` to not keep the whole dataset in memory. All the benefits of `generator`s here!
+ * runs in parallel to the model for efficiency, allows real-time data augmentation (again, `ImageDataGenerator`) on images on CPU in parallel to training your model on GPU. Finally, we can make use of lots of CPU's on GCP!
+ * `keras.utils.Sequence` guarantees ordering and single use of every input per epoch when using `use_multiprocessing=True` argument
+
+**Next steps**
+* Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+* Checked out 2 episodes of the [MIT AI Podcast](https://lexfridman.com/ai/). I would love to watch the actual YouTube lectures and write down what I learn. Very good signals from both.
+  * Ilya Sutskever https://www.youtube.com/watch?v=9EN_HoEk3KY
+  * Ray Kurzweil https://www.youtube.com/watch?v=9Z06rY3uvGY
 
 ## 2018/9/17
 Tags: rmsprop optimizer recurrent neural networks RNN
