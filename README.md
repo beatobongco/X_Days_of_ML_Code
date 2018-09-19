@@ -14,6 +14,7 @@ Colab: https://colab.research.google.com/drive/1nU_VOPGPu1VBUu1G2rkZZNXQkWY9p8Zs
  * basically use this over `fit` to not keep the whole dataset in memory. All the benefits of `generator`s here!
  * runs in parallel to the model for efficiency, allows real-time data augmentation (again, `ImageDataGenerator`) on images on CPU in parallel to training your model on GPU. Finally, we can make use of lots of CPU's on GCP!
  * `keras.utils.Sequence` guarantees ordering and single use of every input per epoch when using `use_multiprocessing=True` argument
+* training with the colab runtime with GPU is super fast after the first epoch! Just ~25s per epoch!
 
 **Next steps**
 * Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
