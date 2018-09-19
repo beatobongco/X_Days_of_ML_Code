@@ -2,8 +2,32 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 10 days
-### Best streak: 10 days
+### Current streak: 11 days
+### Best streak: 11 days
+
+## 2018/9/19
+Tags: colab runtime gce image adam optimizer
+
+Colab: https://colab.research.google.com/drive/1VeVqxRcTLP550AlE_ceIiSkrxqjJ_HQY
+
+* TIL there is a company that sells desktop and laptops for deep learning https://lambdalabs.com/laptops/tensorbook/customize
+
+**Adam**
+https://www.youtube.com/watch?v=JXQT_vxqwIs
+* Adaptive moment estimation
+* It's rmsprop + momentum -- let's study momentum first.
+
+**Momentum**
+* https://www.youtube.com/watch?v=k8fTYJPd3_I
+* accelerates SGD in the relevant direction and dampens oscillations 
+* when you average out gradients, you'll see that oscillations in the noisy directions average out close to 0
+
+**Next steps**
+* Use tensorflow hub mobilenet v2 to go through second part of [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html), see if you can get >90% validation accuracy and quick inference time without having to cache the bottleneck features
+* Watch Lex Fridman's interviews with Ilya and Ray!
+* You can use your own runtime as backend for colab notebooks
+  * https://blog.kovalevskyi.com/deep-learning-images-for-google-cloud-engine-the-definitive-guide-bc74f5fb02bc
+  * https://blog.kovalevskyi.com/gce-deeplearning-images-as-a-backend-for-google-colaboratory-bc4903d24947
 
 ## 2018/9/18
 Tags: podcast keras fit generator
