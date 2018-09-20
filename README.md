@@ -5,6 +5,14 @@
 ### Current streak: 11 days
 ### Best streak: 11 days
 
+## 2018/9/20
+Tags: backprop
+
+Listened to Ilya Sutskever https://www.youtube.com/watch?v=9EN_HoEk3KY
+
+* Why do neural networks work? All conceivable regularity can be expressed by a short program
+* Backprop solves a profound problem, *circuit search*. These are not perfect but can be used to solve many interesting problems.
+
 ## 2018/9/19
 Tags: colab runtime gce image adam optimizer
 
