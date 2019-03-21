@@ -2,8 +2,17 @@
 
 [Here](https://github.com/beatobongco/x-days-of-ml-code/blob/master/rules.md) are the rules. This is a modified version of the [100 Days of ML Code challenge](https://github.com/llSourcell/100_Days_of_ML_Code).
 
-### Current streak: 11 days
+### Current streak: 1 day
 ### Best streak: 11 days
+
+## 2019/3/21
+Tags: fast.ai random forests
+
+* df.to_feather - save dataframes / pandas stuff in format of how it is represented in RAM. Fastest way to save stuff
+* dates -- you can extract so much info like is it a weekend, holiday, etc https://docs.fast.ai/tabular.transform.html#add_datepart
+* random forest -- trivially parallelizable, scales linearly w/ CPUs, powerful and simple
+
+TODO: replicate https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb on google colab, for extra challenge replicate the utility methods yourself (don't use fast.ai lib)
 
 ## 2018/9/20
 Tags: backprop
