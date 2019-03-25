@@ -27,6 +27,7 @@ Tags: fast.ai lesson 1 cnn
 ## 2019/3/21
 Tags: fast.ai random forests
 
+* https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb
 * df.to_feather - save dataframes / pandas stuff in format of how it is represented in RAM. Fastest way to save stuff
 * dates -- you can extract so much info like is it a weekend, holiday, etc https://docs.fast.ai/tabular.transform.html#add_datepart
 * random forest -- trivially parallelizable, scales linearly w/ CPUs, powerful and simple
