@@ -5,6 +5,25 @@
 ### Current streak: 1 day
 ### Best streak: 11 days
 
+## 2019/3/25
+Tags: fast.ai lesson 1 cnn
+
+* https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson1-pets.ipynb
+* nice notes on the lesson, could read these instead of listening to the whole long video https://github.com/hiromis/notes/blob/master/Lesson1.md
+* fine grained classification -- fancy term for classifying lots of subclasses of the same thing e.g. dog breeds
+* 1cycle fitting - 2018 way to fit which just some things to increase learning rate and train faster and more effectively
+  * https://sgugger.github.io/the-1cycle-policy.html
+* the fast.ai library 
+  * very [well documented](https://docs.fast.ai/) with each function having a notebook
+  * ![image](https://user-images.githubusercontent.com/3739702/54918755-14f7ea80-4f3a-11e9-803c-671d687f6c88.png)
+  * seems to have many sensible defaults, and many utility functions for data exploration, showing results, and getting started quickly `any time we know what to do for you, we do it for you. Anytime we can pick a good default, we pick it for you`
+  * only downside is its future is unknown. With GOOG behind Keras and TF, that ecosystem seems like a good investment
+  * perhaps the fast.ai lib is a good tool to get milage with in ML, build lots of things and only when power/ecosystem becomes lacking, then transitiion into TF ecosystem
+* Kaggle + academic datasets as benchmarks to see how well you understand concepts / use existing tech which you can use to solve real world problems 
+* TODO: super important -- **run and play around with the code**, all this note taking is useless w/o it
+* (!!!) to learn, understand the I/O of ML at each stage, for each function ideally
+* dont need academic background to create value with ML, a lot of people w/ not much prior experience just jumped into it. Domain expertise + AI = really good results
+
 ## 2019/3/21
 Tags: fast.ai random forests
 
@@ -55,7 +74,7 @@ Colab: https://colab.research.google.com/drive/1nU_VOPGPu1VBUu1G2rkZZNXQkWY9p8Zs
  * basically use this over `fit` to not keep the whole dataset in memory. All the benefits of `generator`s here!
  * runs in parallel to the model for efficiency, allows real-time data augmentation (again, `ImageDataGenerator`) on images on CPU in parallel to training your model on GPU. Finally, we can make use of lots of CPU's on GCP!
  * `keras.utils.Sequence` guarantees ordering and single use of every input per epoch when using `use_multiprocessing=True` argument
-* training with the colab runtime with GPU is super fast after the first epoch! Just ~25s per epoch!
+* training with the colab runtime with GPU is super fast after the first epoch! Just ~25s per epoch! 
 
 **Next steps**
 * Still go through [keras image classification tutorial](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
