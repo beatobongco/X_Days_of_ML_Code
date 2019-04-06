@@ -5,8 +5,26 @@
 ### Current streak: 1 day
 ### Best streak: 11 days
 
+## 2019/4/6
+Tags: fast.ai lesson 2 
+
+* you can download urls directly from google images using a line of js code
+* when using `Learner.find_lr()` look for the steepest continuous slope of the graph, and that's where you slice your learning rate
+* `fastai.widgets.FileDeleter` is a little webapp that allows you to delete files, combine this with the top losses of your `Learner` to remove noise from your dataset
+* random: can make a widget to help with manual PDF value fixing, show the dataframe and correct values with a GUI
+  * it can take in a dataframe and then correct it
+  * it already exists haha https://github.com/quantopian/qgrid
+* `learn.recorder.plot_losses()` is a really nice function to graph your training and validation losses
+* higher train loss vs validation loss means you haven't trained enough (increase epochs or learning rate)
+* [`get_transforms`](https://docs.fast.ai/vision.transform.html#get_transforms) is data augmentation with sensible defaults 
+* use `doc()` in-notebook to get details docs + links to source code for fastai stuff
+* Check out Computational Linear Algebra for Coders https://www.fast.ai/2017/07/17/num-lin-alg/
+
+
 ## 2019/3/25
 Tags: fast.ai lesson 1 cnn
+
+Colab: https://colab.research.google.com/drive/1QD1VwBhaqm2PkhpkQl2KeW7axa0uLqRx
 
 * https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson1-pets.ipynb
 * nice notes on the lesson, could read these instead of listening to the whole long video https://github.com/hiromis/notes/blob/master/Lesson1.md
