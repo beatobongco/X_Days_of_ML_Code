@@ -19,7 +19,7 @@ Tags: fast.ai lesson 2
 * [`get_transforms`](https://docs.fast.ai/vision.transform.html#get_transforms) is data augmentation with sensible defaults 
 * use `doc()` in-notebook to get details docs + links to source code for fastai stuff
 * Check out Computational Linear Algebra for Coders https://www.fast.ai/2017/07/17/num-lin-alg/
-
+* you can animate in matplotlib!!!
 
 ## 2019/3/25
 Tags: fast.ai lesson 1 cnn
