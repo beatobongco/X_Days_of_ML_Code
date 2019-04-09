@@ -5,6 +5,14 @@
 ### Current streak: 1 day
 ### Best streak: 11 days
 
+## 2019/4/9
+Tags: ipython widgets
+
+* set up a Google Deep Learning VM (4CPU, 26 GB RAM, K80) and training time was just 2x faster but then we lose the nice google colab interface
+* ipython widgets dont seem to work either, quiz for myself: must find better way to implement removing those high loss images from the dataset (non-destructive) and create a new one w/c we can train with
+* can create a workflow where we save trained model in GCS and just load it via `load_learner`
+* add confusion matrix `interp.plot_confusion_matrix()` to the colab
+
 ## 2019/4/6
 Tags: fast.ai lesson 2 
 
