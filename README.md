@@ -10,6 +10,8 @@ Tags: ipython widgets
 
 * set up a Google Deep Learning VM (4CPU, 26 GB RAM, K80) and training time was just 2x faster but then we lose the nice google colab interface
 * ipython widgets dont seem to work either, quiz for myself: must find better way to implement removing those high loss images from the dataset (non-destructive) and create a new one w/c we can train with
+  * but colab has its own widgets (no inputs it seems) https://colab.research.google.com/notebooks/widgets.ipynb#scrollTo=WUWQJqKwrwg5
+  * can use simple `input() # y / n` calls to create my widget
 * can create a workflow where we save trained model in GCS and just load it via `load_learner`
 * add confusion matrix `interp.plot_confusion_matrix()` to the colab
 
