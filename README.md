@@ -9,6 +9,7 @@
 Tags: fastai 
 
 * https://course.fast.ai/videos/?lesson=3 stopped at 1hr
+* notes are extremely useful https://github.com/hiromis/notes/blob/master/Lesson3.md
 * when competing w/ kaggle, be sure to put in the right metrics e.g. `fscore`)
 * The [DataBlock API](https://docs.fast.ai/data_block.html) is a nice, high-level, chainable API that builds on PyTorch's `Dataset` and `DataLoader`. It provides a way to create `DataBunch`es which allow you to split your dataset into train, validation and also apply transforms, which are data augmentations.
 * detecting stuff in a frame by coloring their pixels is called `segmentation`
@@ -16,6 +17,10 @@ Tags: fastai
 * multclassification - classify as multiple labels, outputs are determined by logits > a certain threshold (no `argmax`)
 * learned about Python3 `partial` which just returns a copy of the function w/ args pre-supplied https://docs.python.org/3/library/functools.html#functools.partial
 * you can do transfer learning easily by changing your `Learner`'s data
+
+![img](https://raw.githubusercontent.com/hiromis/notes/master/lesson3/29.png)
+
+In this case, he just changed the `size` of the transform
 
 ```
 data = # some DataBunch
