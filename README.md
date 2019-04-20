@@ -5,6 +5,29 @@
 ### Current streak: 1 day
 ### Best streak: 11 days
 
+## 2019/4/20
+Tags: fastai 
+
+* https://course.fast.ai/videos/?lesson=3 stopped at 1hr
+* when competing w/ kaggle, be sure to put in the right metrics e.g. `fscore`)
+* The [DataBlock API](https://docs.fast.ai/data_block.html) is a nice, high-level, chainable API that builds on PyTorch's `Dataset` and `DataLoader`. It provides a way to create `DataBunch`es which allow you to split your dataset into train, validation and also apply transforms, which are data augmentations.
+* detecting stuff in a frame by coloring their pixels is called `segmentation`
+![img](https://raw.githubusercontent.com/hiromis/notes/master/lesson3/21.png)
+* multclassification - classify as multiple labels, outputs are determined by logits > a certain threshold (no `argmax`)
+* learned about Python3 `partial` which just returns a copy of the function w/ args pre-supplied https://docs.python.org/3/library/functools.html#functools.partial
+* you can do transfer learning easily by changing your `Learner`'s data
+
+```
+data = # some DataBunch
+learn.data = data
+learn.fit_one_cycle
+```
+
+* there are different arts in determining best learning rate, when doing transfer learning its usually one step down from the part in the graph that it starts to shoot up
+
+![image](https://user-images.githubusercontent.com/3739702/56453341-be809f00-6373-11e9-9404-4fe2c0e6bfd3.png)
+
+
 ## 2019/4/9
 Tags: ipython widgets
 
