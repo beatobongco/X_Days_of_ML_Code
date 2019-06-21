@@ -5,6 +5,13 @@
 ### Current streak: 1 day
 ### Best streak: 11 days
 
+## 2019/6/21
+Tags: scipy sparse matrix
+
+* Use sparse matrices when storing large-width one-hot encoded matrices. They can reduce the file size by a huge factor. `scipy` version >= 1.19. has utilities for saving and loading sparse matrices `scipy.sparse.save_npz`, `scipy.sparse.load_npz`
+
+* Expanding matrices can take a lot of memory. Let `S` be a huge sparse matrix saved in compressed sparse row (CSR) format. If you do `S.todense()` it will eat all of your RAM. You can instead get the rows you need by `S[[0, 1, 2]` (gets the first 3 rows) or better yet you can do `S[range(3)]` to the same effect. You can then expand them after so you can use them like a normal matrix.
+
 ## 2019/4/20
 Tags: fastai 
 
